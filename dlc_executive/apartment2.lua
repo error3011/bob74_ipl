@@ -9,35 +9,35 @@ ExecApartment2 = {
     Style = {
         Theme = {
             modern = {
-                interiorId = 227585,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_01_b"
             },
             moody = {
-                interiorId = 228353,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_02_b"
             },
             vibrant = {
-                interiorId = 229121,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_03_b"
             },
             sharp = {
-                interiorId = 229889,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_04_b"
             },
             monochrome = {
-                interiorId = 230657,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_05_b"
             },
             seductive = {
-                interiorId = 231425,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_06_b"
             },
             regal = {
-                interiorId = 232193,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_07_b"
             },
             aqua = {
-                interiorId = 232961,
+                interiorId = GetInteriorAtCoords(-773.22580000, 322.82520000, 194.88620000),
                 ipl = "apa_v_mp_h_08_b"
             }
         },
@@ -59,7 +59,7 @@ ExecApartment2 = {
                 SetIplPropState(value.interiorId, {
                     "Apart_Hi_Strip_A",
                     "Apart_Hi_Strip_B",
-                    "Apart_Hi_Strip_C"}, false)
+                    "Apart_Hi_Strip_C" }, false)
                 SetIplPropState(value.interiorId, {
                     "Apart_Hi_Booze_A",
                     "Apart_Hi_Booze_B",

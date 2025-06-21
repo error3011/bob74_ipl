@@ -4,7 +4,7 @@ exports('GetDoomsdayFacilityObject', function()
 end)
 
 DoomsdayFacility = {
-    interiorId = 269313,
+    interiorId = GetInteriorAtCoords(345.0, 4842.0, -60.0),
 
     Ipl = {
         Interior = {
@@ -20,19 +20,19 @@ DoomsdayFacility = {
         },
         Exterior = {
             ipl = {
-                "xm_hatch_01_cutscene", -- 1286.924 2846.06 49.39426
-                "xm_hatch_02_cutscene", -- 18.633 2610.834 86.0
-                "xm_hatch_03_cutscene", -- 2768.574 3919.924 45.82
-                "xm_hatch_04_cutscene", -- 3406.90 5504.77 26.28
-                "xm_hatch_06_cutscene", -- 1.90 6832.18 15.82
-                "xm_hatch_07_cutscene", -- -2231.53 2418.42 12.18
-                "xm_hatch_08_cutscene", -- -6.92 3327.0 41.63
-                "xm_hatch_09_cutscene", -- 2073.62 1748.77 104.51
-                "xm_hatch_10_cutscene", -- 1874.35 284.34 164.31
-                "xm_hatch_closed", -- Closed hatches (all)
+                "xm_hatch_01_cutscene",      -- 1286.924 2846.06 49.39426
+                "xm_hatch_02_cutscene",      -- 18.633 2610.834 86.0
+                "xm_hatch_03_cutscene",      -- 2768.574 3919.924 45.82
+                "xm_hatch_04_cutscene",      -- 3406.90 5504.77 26.28
+                "xm_hatch_06_cutscene",      -- 1.90 6832.18 15.82
+                "xm_hatch_07_cutscene",      -- -2231.53 2418.42 12.18
+                "xm_hatch_08_cutscene",      -- -6.92 3327.0 41.63
+                "xm_hatch_09_cutscene",      -- 2073.62 1748.77 104.51
+                "xm_hatch_10_cutscene",      -- 1874.35 284.34 164.31
+                "xm_hatch_closed",           -- Closed hatches (all)
                 "xm_siloentranceclosed_x17", -- Closed silo: 598.4869 5556.846 716.7615
-                "xm_bunkerentrance_door", -- Bunker entrance closed door: 2050.85 2950.0 47.75
-                "xm_hatches_terrain", -- Terrain adjustments for facilities (all) + silo
+                "xm_bunkerentrance_door",    -- Bunker entrance closed door: 2050.85 2950.0 47.75
+                "xm_hatches_terrain",        -- Terrain adjustments for facilities (all) + silo
                 "xm_hatches_terrain_lod"
             },
 
@@ -205,7 +205,8 @@ DoomsdayFacility = {
                 rotation = vector3(0.0, 0.0, 0.0),
 
                 Enable = function(state)
-                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, 1.0, DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
+                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, 1.0,
+                        DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
 
                     if state then
                         if handle == 0 then
@@ -214,7 +215,8 @@ DoomsdayFacility = {
                                 Wait(0)
                             end
 
-                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, false, false, false)
+                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.y,
+                                DoomsdayFacility.PrivacyGlass.Bedroom.Control.position.z, false, false, false)
 
                             SetEntityRotation(privacyGlass, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.x, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.y, DoomsdayFacility.PrivacyGlass.Bedroom.Control.rotation.z, 2, true)
                             FreezeEntityPosition(privacyGlass, true)
@@ -295,7 +297,8 @@ DoomsdayFacility = {
                 rotation = vector3(0.0, 0.0, -16.0),
 
                 Enable = function(state)
-                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, 1.0, DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
+                    local handle = GetClosestObjectOfType(DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, 1.0,
+                        DoomsdayFacility.PrivacyGlass.controlModelHash, false, false, false)
 
                     if state then
                         if handle == 0 then
@@ -304,7 +307,8 @@ DoomsdayFacility = {
                                 Wait(0)
                             end
 
-                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, false, false, false)
+                            local privacyGlass = CreateObjectNoOffset(DoomsdayFacility.PrivacyGlass.controlModelHash, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.position.y,
+                                DoomsdayFacility.PrivacyGlass.Lounge.Control.position.z, false, false, false)
 
                             SetEntityRotation(privacyGlass, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.x, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.y, DoomsdayFacility.PrivacyGlass.Lounge.Control.rotation.z, 2, true)
                             FreezeEntityPosition(privacyGlass, true)

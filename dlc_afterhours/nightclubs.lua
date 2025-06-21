@@ -4,7 +4,7 @@ exports('GetAfterHoursNightclubsObject', function()
 end)
 
 AfterHoursNightclubs = {
-    interiorId = 271617,
+    interiorId = GetInteriorAtCoords(-1604.664, -3012.583, -78.000),
 
     Ipl = {
         Interior = {
@@ -304,20 +304,20 @@ AfterHoursNightclubs = {
             end,
         },
         Details = {
-            clutter = "Int01_ba_Clutter", -- Clutter and graffitis
-            worklamps = "Int01_ba_Worklamps", -- Work lamps + trash
-            truck = "Int01_ba_deliverytruck", -- Truck parked in the garage
-            dryIce = "Int01_ba_dry_ice", -- Dry ice machines (no effects)
-            lightRigsOff = "light_rigs_off", -- All light rigs at once but turned off
-            roofLightsOff = "Int01_ba_lightgrid_01", -- Fake lights
+            clutter = "Int01_ba_Clutter",             -- Clutter and graffitis
+            worklamps = "Int01_ba_Worklamps",         -- Work lamps + trash
+            truck = "Int01_ba_deliverytruck",         -- Truck parked in the garage
+            dryIce = "Int01_ba_dry_ice",              -- Dry ice machines (no effects)
+            lightRigsOff = "light_rigs_off",          -- All light rigs at once but turned off
+            roofLightsOff = "Int01_ba_lightgrid_01",  -- Fake lights
             floorTradLights = "Int01_ba_trad_lights", -- Floor lights meant to go with the trad style
-            chest = "Int01_ba_trophy04", -- Chest on the VIP desk
-            vaultAmmunations = "Int01_ba_trophy05", -- (inside vault) Ammunations
-            vaultMeth = "Int01_ba_trophy07", -- (inside vault) Meth bag
-            vaultFakeID = "Int01_ba_trophy08", -- (inside vault) Fake ID
-            vaultWeed = "Int01_ba_trophy09", -- (inside vault) Opened weed bag
-            vaultCoke = "Int01_ba_trophy10", -- (inside vault) Coke doll
-            vaultCash = "Int01_ba_trophy11", -- (inside vault) Scrunched fake money
+            chest = "Int01_ba_trophy04",              -- Chest on the VIP desk
+            vaultAmmunations = "Int01_ba_trophy05",   -- (inside vault) Ammunations
+            vaultMeth = "Int01_ba_trophy07",          -- (inside vault) Meth bag
+            vaultFakeID = "Int01_ba_trophy08",        -- (inside vault) Fake ID
+            vaultWeed = "Int01_ba_trophy09",          -- (inside vault) Opened weed bag
+            vaultCoke = "Int01_ba_trophy10",          -- (inside vault) Coke doll
+            vaultCash = "Int01_ba_trophy11",          -- (inside vault) Scrunched fake money
 
             Enable = function(details, state, refresh)
                 SetIplPropState(AfterHoursNightclubs.interiorId, details, state, refresh)

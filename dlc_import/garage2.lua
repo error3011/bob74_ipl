@@ -6,19 +6,19 @@ end)
 ImportCEOGarage2 = {
     Part = {
         Garage1 = { -- -84.2193, -823.0851, 221.0000
-            interiorId = 254465,
+            interiorId = GetInteriorAtCoords(-84.2193, -823.0851, 221.0000),
             ipl = "imp_dt1_11_cargarage_a"
         },
         Garage2 = { -- -69.8627, -824.7498, 221.0000
-            interiorId = 254721,
+            interiorId = GetInteriorAtCoords(-69.8627, -824.7498, 221.0000),
             ipl = "imp_dt1_11_cargarage_b"
         },
         Garage3 = { -- -80.4318, -813.2536, 221.0000
-            interiorId = 254977,
+            interiorId = GetInteriorAtCoords(-80.4318, -813.2536, 221.0000),
             ipl = "imp_dt1_11_cargarage_c"
         },
         ModShop = { -- -73.9039, -821.6204, 284.0000
-            interiorId = 255233,
+            interiorId = GetInteriorAtCoords(-73.9039, -821.6204, 284.0000),
             ipl = "imp_dt1_11_modgarage"
         },
 

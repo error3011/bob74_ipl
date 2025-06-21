@@ -3,7 +3,7 @@ exports('GetFranklinAuntObject', function()
 end)
 
 FranklinAunt = {
-    interiorId = 197889,
+    interiorId = GetInteriorAtCoords(-9.96562, -1438.54, 31.1015), -- Franklin's Aunt's House: -14.0, -1477.0, 30.0
 
     Style = {
         empty = "",
@@ -30,7 +30,7 @@ FranklinAunt = {
     },
     Details = {
         bandana = "V_57_GangBandana", -- Bandana on the bed
-        bag = "V_57_Safari", -- Bag in the closet
+        bag = "V_57_Safari",          -- Bag in the closet
 
         Enable = function(details, state, refresh)
             SetIplPropState(FranklinAunt.interiorId, details, state, refresh)

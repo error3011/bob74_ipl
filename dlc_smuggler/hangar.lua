@@ -4,7 +4,7 @@ exports('GetSmugglerHangarObject', function()
 end)
 
 SmugglerHangar = {
-    interiorId = 260353,
+    interiorId = GetInteriorAtCoords(-1267.0, -3013.135, -49.5),
 
     Ipl = {
         Interior = {
@@ -27,7 +27,7 @@ SmugglerHangar = {
         colorSet6 = 6, -- yellow, gray, light gray
         colorSet7 = 7, -- light Black and white
         colorSet8 = 8, -- dark Black and white
-        colorSet9 = 9 -- sable and gray
+        colorSet9 = 9  -- sable and gray
     },
     Walls = {
         default = "set_tint_shell",

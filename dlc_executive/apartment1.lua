@@ -1,4 +1,4 @@
--- Apartment 1: -787.78050000 334.92320000 215.83840000
+-- Apartment 1: -787.78050000, 334.92320000, 215.83840000
 exports('GetExecApartment1Object', function()
     return ExecApartment1
 end)
@@ -9,35 +9,35 @@ ExecApartment1 = {
     Style = {
         Theme = {
             modern = {
-                interiorId = 227329,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_01_a"
             },
             moody = {
-                interiorId = 228097,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_02_a"
             },
             vibrant = {
-                interiorId = 228865,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_03_a"
             },
             sharp = {
-                interiorId = 229633,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_04_a"
             },
             monochrome = {
-                interiorId = 230401,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_05_a"
             },
             seductive = {
-                interiorId = 231169,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_06_a"
             },
             regal = {
-                interiorId = 231937,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_07_a"
             },
             aqua = {
-                interiorId = 232705,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 215.83840000),
                 ipl = "apa_v_mp_h_08_a"
             }
         },
@@ -120,7 +120,7 @@ ExecApartment1 = {
     },
 
     LoadDefault = function()
-        ExecApartment1.Style.Set(ExecApartment1.Style.Theme.modern, true)
+        ExecApartment1.Style.Set(ExecApartment1.Style.Theme.moody, true)
         ExecApartment1.Strip.Enable({
             ExecApartment1.Strip.A,
             ExecApartment1.Strip.B,

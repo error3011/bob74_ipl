@@ -4,7 +4,7 @@ exports('GetHLApartment6Object', function()
 end)
 
 HLApartment6 = {
-    interiorId = 147457,
+    interiorId = GetInteriorAtCoords(-609.56690000, 51.28212000, -183.98080),
 
     Ipl = {
         Interior = {

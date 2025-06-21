@@ -3,7 +3,7 @@ exports('GetTunerGarageObject', function()
 end)
 
 TunerGarage = {
-    InteriorId = 285953,
+    InteriorId = GetInteriorAtCoords(-1350.0, 160.0, -100.0),
 
     Ipl = {
         Exterior = {
@@ -49,11 +49,11 @@ TunerGarage = {
         entity_set_style_2 = false,
         entity_set_style_3 = false,
         entity_set_style_4 = false,
-        entity_set_style_5 = false,
+        entity_set_style_5 = true,
         entity_set_style_6 = false,
         entity_set_style_7 = false,
         entity_set_style_8 = false,
-        entity_set_style_9 = true,
+        entity_set_style_9 = false,
         entity_set_table = false,
         entity_set_thermal = true,
         entity_set_tints = true,

@@ -4,7 +4,7 @@ exports("GetMoneyCarwash", function()
 end)
 
 MoneyCarwash = {
-    interiorId = 298497,
+    interiorId = GetInteriorAtCoords(26.074, -1398.979, -75.0),
 
     Ipl = {
         Exterior = {

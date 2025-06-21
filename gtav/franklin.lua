@@ -3,7 +3,7 @@ exports('GetFranklinObject', function()
 end)
 
 Franklin = {
-    interiorId = 206849,
+    interiorId = GetInteriorAtCoords(6.0331, 531.7776, 175.3449),
 
     Style = {
         empty = "",
@@ -50,10 +50,10 @@ Franklin = {
         end
     },
     Details = {
-        flyer = "progress_flyer", -- Mountain flyer on the kitchen counter
-        tux = "progress_tux", -- Tuxedo suit in the wardrobe
+        flyer = "progress_flyer",   -- Mountain flyer on the kitchen counter
+        tux = "progress_tux",       -- Tuxedo suit in the wardrobe
         tshirt = "progress_tshirt", -- "I <3 LS" tshirt on the bed
-        bong = "bong_and_wine", -- Bong on the table
+        bong = "bong_and_wine",     -- Bong on the table
 
         Enable = function(details, state, refresh)
             SetIplPropState(Franklin.interiorId, details, state, refresh)

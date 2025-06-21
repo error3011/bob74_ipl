@@ -3,7 +3,7 @@ exports('GetTunerMethLabObject', function()
 end)
 
 TunerMethLab = {
-    InteriorId = 284673,
+    InteriorId = GetInteriorAtCoords(981.9999, -143.0, -50.0),
 
     Entities = {
         tintable_walls = true,
@@ -21,8 +21,6 @@ TunerMethLab = {
             for entity, state in pairs(TunerMethLab.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(TunerMethLab.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(TunerMethLab.InteriorId, entity)
                 end
             end
         end,

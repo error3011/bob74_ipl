@@ -3,7 +3,7 @@ exports('GetTrevorsTrailerObject', function()
 end)
 
 TrevorsTrailer = {
-    interiorId = 2562,
+    interiorId = GetInteriorAtCoords(1985.48132, 3828.76757, 32.5),
 
     Interior = {
         tidy = "trevorstrailertidy",
@@ -22,9 +22,9 @@ TrevorsTrailer = {
         end
     },
     Details = {
-        copHelmet = "V_26_Trevor_Helmet3", -- Cop helmet in the closet
+        copHelmet = "V_26_Trevor_Helmet3",    -- Cop helmet in the closet
         briefcase = "V_24_Trevor_Briefcase3", -- Briefcase in the main room
-        michaelStuff = "V_26_Michael_Stay3", -- Michael's suit hanging on the window
+        michaelStuff = "V_26_Michael_Stay3",  -- Michael's suit hanging on the window
 
         Enable = function(details, state, refresh)
             SetIplPropState(TrevorsTrailer.interiorId, details, state, refresh)

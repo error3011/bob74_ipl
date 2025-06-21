@@ -70,8 +70,8 @@ BikerGang = {
         end
     },
     Clubhouse = {
-        interiorId1 = 246273,
-        interiorId2 = 246529,
+        interiorId1 = GetInteriorAtCoords(1107.04, -3157.399, -37.51859),
+        interiorId2 = GetInteriorAtCoords(998.4809, -3164.711, -38.90733),
 
         Members = {
             President = {
@@ -318,17 +318,17 @@ BikerGang = {
                     outrider = "SHU_MENU_DESC"
                 },
                 Pictures = {
-                    byThePound = "CHM_IMG0", -- Pickup car parked
-                    prisonerOfWar = "CHM_IMG8", -- Police with man down
-                    gunsForHire = "CHM_IMG4", -- Limo
-                    weaponOfChoice = "CHM_IMG10", -- Prisoner being beaten
-                    gunrunning = "CHM_IMG3", -- Shipment
+                    byThePound = "CHM_IMG0",         -- Pickup car parked
+                    prisonerOfWar = "CHM_IMG8",      -- Police with man down
+                    gunsForHire = "CHM_IMG4",        -- Limo
+                    weaponOfChoice = "CHM_IMG10",    -- Prisoner being beaten
+                    gunrunning = "CHM_IMG3",         -- Shipment
                     nineTenthsOfTheLaw = "CHM_IMG6", -- Wheeling
-                    jailbreak = "CHM_IMG5", -- Prison bus
-                    cracked = "CHM_IMG1", -- Safe
-                    fragileGoods = "CHM_IMG2", -- Lost Van
-                    torched = "CHM_IMG9", -- Explosive crate
-                    outrider = "CHM_IMG7" -- Sport ride
+                    jailbreak = "CHM_IMG5",          -- Prison bus
+                    cracked = "CHM_IMG1",            -- Safe
+                    fragileGoods = "CHM_IMG2",       -- Lost Van
+                    torched = "CHM_IMG9",            -- Explosive crate
+                    outrider = "CHM_IMG7"            -- Sport ride
                 },
             },
             needToLoad = false,
@@ -518,9 +518,9 @@ function DrawClubName(name, color, font)
     elseif BikerGang.Clubhouse.ClubName.stage == 1 then
         if HasScaleformMovieLoaded(BikerGang.Clubhouse.ClubName.movieId) then
             local parameters = {
-                p0 = {type = "string", value = name},
-                p1 = {type = "int", value = color},
-                p2 = {type = "int", value = font}
+                p0 = { type = "string", value = name },
+                p1 = { type = "int", value = color },
+                p2 = { type = "int", value = font }
             }
 
             SetupScaleform(BikerGang.Clubhouse.ClubName.movieId, "SET_CLUBHOUSE_NAME", parameters)

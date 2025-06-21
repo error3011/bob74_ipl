@@ -4,7 +4,7 @@ exports('GetBikerDocumentForgeryObject', function()
 end)
 
 BikerDocumentForgery = {
-    interiorId = 246785,
+    interiorId = GetInteriorAtCoords(1165.0, -3196.6, -39.01306),
 
     Ipl = {
         Interior = {
@@ -84,8 +84,8 @@ BikerDocumentForgery = {
             G = "chair07"
         },
         production = "production", -- Papers, pencils
-        furnitures = "set_up", -- Printers, shredders
-        clutter = "clutter", -- Pizza boxes, cups
+        furnitures = "set_up",     -- Printers, shredders
+        clutter = "clutter",       -- Pizza boxes, cups
 
         Enable = function(details, state, refresh)
             SetIplPropState(BikerDocumentForgery.interiorId, details, state, refresh)

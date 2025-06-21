@@ -4,7 +4,7 @@ exports('GetBikerClubhouse1Object', function()
 end)
 
 BikerClubhouse1 = {
-    interiorId = 246273,
+    interiorId = GetInteriorAtCoords(1107.04, -3157.399, -37.51859),
 
     Ipl = {
         Interior = {

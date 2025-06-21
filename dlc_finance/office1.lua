@@ -13,47 +13,47 @@ FinanceOffice1 = {
     Style = {
         Theme = {
             warm = {
-                interiorId = 236289,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_01a",
                 safe = "ex_prop_safedoor_office1a"
             },
             classical = {
-                interiorId = 236545,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_01b",
                 safe = "ex_prop_safedoor_office1b"
             },
             vintage = {
-                interiorId = 236801,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_01c",
                 safe = "ex_prop_safedoor_office1c"
             },
             contrast = {
-                interiorId = 237057,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_02a",
                 safe = "ex_prop_safedoor_office2a"
             },
             rich = {
-                interiorId = 237313,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_02b",
                 safe = "ex_prop_safedoor_office2a"
             },
             cool = {
-                interiorId = 237569,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_02c",
                 safe = "ex_prop_safedoor_office2a"
             },
             ice = {
-                interiorId = 237825,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_03a",
                 safe = "ex_prop_safedoor_office3a"
             },
             conservative = {
-                interiorId = 238081,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_03b",
                 safe = "ex_prop_safedoor_office3a"
             },
             polished = {
-                interiorId = 238337,
+                interiorId = GetInteriorAtCoords(-141.1987, -620.913, 168.8205),
                 ipl = "ex_dt1_02_office_03c",
                 safe = "ex_prop_safedoor_office3c"
             }
@@ -103,7 +103,7 @@ FinanceOffice1 = {
         end
     },
     Safe = {
-        doorHeadingL = 96.0, -- Only need the heading of the Left door to get the Right ones
+        doorHeadingL = 96.0,                           -- Only need the heading of the Left door to get the Right ones
         Position = vector3(-124.25, -641.30, 168.870), -- Approximately between the two doors
         -- These values are checked from "doorHandler.lua" and
         isLeftDoorOpen = false,
@@ -318,7 +318,113 @@ FinanceOffice1 = {
     },
 
     LoadDefault = function()
-        FinanceOffice1.Style.Set(FinanceOffice1.Style.Theme.polished)
+        FinanceOffice1.Style.Set(FinanceOffice1.Style.Theme.rich)
         FinanceOffice1.Chairs.Set(FinanceOffice1.Chairs.on, true)
+        FinanceOffice1.Booze.Set(FinanceOffice1.Booze.on, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Cash.A,
+            FinanceOffice1.Swag.Cash.B,
+            FinanceOffice1.Swag.Cash.C,
+            FinanceOffice1.Swag.Cash.D,
+            FinanceOffice1.Swag.Cash.E,
+            FinanceOffice1.Swag.Cash.F,
+            FinanceOffice1.Swag.Cash.G,
+            FinanceOffice1.Swag.Cash.H,
+            FinanceOffice1.Swag.Cash.I,
+            FinanceOffice1.Swag.Cash.J,
+            FinanceOffice1.Swag.Cash.K,
+            FinanceOffice1.Swag.Cash.L,
+            FinanceOffice1.Swag.Cash.M,
+            FinanceOffice1.Swag.Cash.N,
+            FinanceOffice1.Swag.Cash.O,
+            FinanceOffice1.Swag.Cash.P,
+            FinanceOffice1.Swag.Cash.Q,
+            FinanceOffice1.Swag.Cash.R,
+            FinanceOffice1.Swag.Cash.S,
+            FinanceOffice1.Swag.Cash.T,
+            FinanceOffice1.Swag.Cash.U,
+            FinanceOffice1.Swag.Cash.V,
+            FinanceOffice1.Swag.Cash.W,
+            FinanceOffice1.Swag.Cash.X
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.BoozeCigs.A,
+            FinanceOffice1.Swag.BoozeCigs.B,
+            FinanceOffice1.Swag.BoozeCigs.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Counterfeit.A,
+            FinanceOffice1.Swag.Counterfeit.B,
+            FinanceOffice1.Swag.Counterfeit.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.DrugBags.A,
+            FinanceOffice1.Swag.DrugBags.B,
+            FinanceOffice1.Swag.DrugBags.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.DrugStatue.A,
+            FinanceOffice1.Swag.DrugStatue.B,
+            FinanceOffice1.Swag.DrugStatue.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Electronic.A,
+            FinanceOffice1.Swag.Electronic.B,
+            FinanceOffice1.Swag.Electronic.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.FurCoats.A,
+            FinanceOffice1.Swag.FurCoats.B,
+            FinanceOffice1.Swag.FurCoats.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Gems.A,
+            FinanceOffice1.Swag.Gems.B,
+            FinanceOffice1.Swag.Gems.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Guns.A,
+            FinanceOffice1.Swag.Guns.B,
+            FinanceOffice1.Swag.Guns.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Ivory.A,
+            FinanceOffice1.Swag.Ivory.B,
+            FinanceOffice1.Swag.Ivory.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Jewel.A,
+            FinanceOffice1.Swag.Jewel.B,
+            FinanceOffice1.Swag.Jewel.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Med.A,
+            FinanceOffice1.Swag.Med.B,
+            FinanceOffice1.Swag.Med.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Painting.A,
+            FinanceOffice1.Swag.Painting.B,
+            FinanceOffice1.Swag.Painting.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Pills.A,
+            FinanceOffice1.Swag.Pills.B,
+            FinanceOffice1.Swag.Pills.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Silver.A,
+            FinanceOffice1.Swag.Silver.B,
+            FinanceOffice1.Swag.Silver.C
+        }, true, true)
+        FinanceOffice1.Swag.Enable({
+            FinanceOffice1.Swag.Guns.A,
+            FinanceOffice1.Swag.Guns.B,
+            FinanceOffice1.Swag.Guns.C
+        }, true, true)
+        FinanceOffice1.Safe.SetDoorState("left", false)
+        FinanceOffice1.Safe.SetDoorState("right", false)
+        FinanceOffice1.Chairs.Set(FinanceOffice1.Chairs.on, false)
+        FinanceOffice1.Booze.Set(FinanceOffice1.Booze.on, false)
     end
 }

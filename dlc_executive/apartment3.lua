@@ -9,35 +9,35 @@ ExecApartment3 = {
     Style = {
         Theme = {
             modern = {
-                interiorId = 227841,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_01_c"
             },
             moody = {
-                interiorId = 228609,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_02_c"
             },
             vibrant = {
-                interiorId = 229377,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_03_c"
             },
             sharp = {
-                interiorId = 230145,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_04_c"
             },
             monochrome = {
-                interiorId = 230913,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_05_c"
             },
             seductive = {
-                interiorId = 231681,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_06_c"
             },
             regal = {
-                interiorId = 232449,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_07_c"
             },
             aqua = {
-                interiorId = 233217,
+                interiorId = GetInteriorAtCoords(-787.78050000, 334.92320000, 186.11340000),
                 ipl = "apa_v_mp_h_08_c"
             }
         },

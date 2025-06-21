@@ -3,7 +3,7 @@ exports('GetCriminalEnterpriseVehicleWarehouseObject', function()
 end)
 
 CriminalEnterpriseVehicleWarehouse = {
-    InteriorId = 289537,
+    InteriorId = GetInteriorAtCoords(800.13696, -3001.4297, -65.14074),
 
     Ipl = {
         Interior = {
@@ -20,13 +20,13 @@ CriminalEnterpriseVehicleWarehouse = {
         end
     },
     Entities = {
-        entity_set_office  = true,
+        entity_set_office         = true,
         entity_set_light_option_1 = true,
         entity_set_light_option_2 = true,
         entity_set_light_option_3 = true,
-        entity_set_tint_options = true,
+        entity_set_tint_options   = true,
 
-        Set = function(name, state)
+        Set                       = function(name, state)
             for entity, _ in pairs(CriminalEnterpriseVehicleWarehouse.Entities) do
                 if entity == name then
                     CriminalEnterpriseVehicleWarehouse.Entities[entity] = state
@@ -35,16 +35,14 @@ CriminalEnterpriseVehicleWarehouse = {
                 end
             end
         end,
-        Load = function()
+        Load                      = function()
             for entity, state in pairs(CriminalEnterpriseVehicleWarehouse.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(CriminalEnterpriseVehicleWarehouse.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(CriminalEnterpriseVehicleWarehouse.InteriorId, entity)
                 end
             end
         end,
-        Clear = function()
+        Clear                     = function()
             for entity, _ in pairs(CriminalEnterpriseVehicleWarehouse.Entities) do
                 if type(entity) == 'string' then
                     DeactivateInteriorEntitySet(CriminalEnterpriseVehicleWarehouse.InteriorId, entity)

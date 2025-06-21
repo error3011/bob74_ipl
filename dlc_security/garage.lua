@@ -4,7 +4,7 @@ exports('GetMpSecurityGarageObject', function()
 end)
 
 MpSecurityGarage = {
-    InteriorId = 286721,
+    InteriorId = GetInteriorAtCoords(-1071.4387, -77.033875, -93.525505),
 
     Ipl = {
         Interior = {
@@ -21,26 +21,26 @@ MpSecurityGarage = {
         end
     },
     Entities = {
-        Entity_Set_Workshop_Wall = false,
-        Entity_Set_Wallpaper_01 = false,
-        Entity_Set_Wallpaper_02  = false,
-        Entity_Set_Wallpaper_03 = false,
-        Entity_Set_Wallpaper_04 = false,
-        Entity_Set_Wallpaper_05 = false,
-        Entity_Set_Wallpaper_06 = false,
-        Entity_Set_Wallpaper_07 = true,
-        Entity_Set_Wallpaper_08 = false,
-        Entity_Set_Wallpaper_09 = false,
-        Entity_Set_Art_1 = false,
-        Entity_Set_Art_2 = false,
-        Entity_Set_Art_3 = false,
-        Entity_Set_Art_1_NoMod = false,
-        Entity_Set_Art_2_NoMod = false,
-        Entity_Set_Art_3_NoMod = false,
-        entity_set_tints = true,
+        Entity_Set_Workshop_Wall   = false,
+        Entity_Set_Wallpaper_01    = false,
+        Entity_Set_Wallpaper_02    = false,
+        Entity_Set_Wallpaper_03    = false,
+        Entity_Set_Wallpaper_04    = false,
+        Entity_Set_Wallpaper_05    = false,
+        Entity_Set_Wallpaper_06    = false,
+        Entity_Set_Wallpaper_07    = true,
+        Entity_Set_Wallpaper_08    = false,
+        Entity_Set_Wallpaper_09    = false,
+        Entity_Set_Art_1           = false,
+        Entity_Set_Art_2           = false,
+        Entity_Set_Art_3           = false,
+        Entity_Set_Art_1_NoMod     = false,
+        Entity_Set_Art_2_NoMod     = false,
+        Entity_Set_Art_3_NoMod     = false,
+        entity_set_tints           = true,
         Entity_Set_Workshop_Lights = true,
 
-        Set = function(name, state)
+        Set                        = function(name, state)
             for entity, _ in pairs(MpSecurityGarage.Entities) do
                 if entity == name then
                     MpSecurityGarage.Entities[entity] = state
@@ -49,16 +49,14 @@ MpSecurityGarage = {
                 end
             end
         end,
-        Load = function()
+        Load                       = function()
             for entity, state in pairs(MpSecurityGarage.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)
                 end
             end
         end,
-        Clear = function()
+        Clear                      = function()
             for entity, _ in pairs(MpSecurityGarage.Entities) do
                 if type(entity) == 'string' then
                     DeactivateInteriorEntitySet(MpSecurityGarage.InteriorId, entity)

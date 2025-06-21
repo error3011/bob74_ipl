@@ -4,7 +4,7 @@ exports('GetDrugWarsLabObject', function()
 end)
 
 DrugWarsLab = {
-    interiorId = 290305,
+    interiorId = GetInteriorAtCoords(483.4252, -2625.071, -50.000),
 
     Details = {
         products = {

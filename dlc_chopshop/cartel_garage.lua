@@ -4,7 +4,7 @@ exports('GetChopShopCartelGarageObject', function()
 end)
 
 ChopShopCartelGarage = {
-    interiorId = 293633,
+    interiorId = GetInteriorAtCoords(1220.133, -2277.844, -50.000),
 
     Entities = {
         entities = "mp2023_02_dlc_int_6_cb",

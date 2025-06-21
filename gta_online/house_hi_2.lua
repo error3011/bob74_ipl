@@ -5,7 +5,7 @@ exports('GetGTAOHouseHi2Object', function()
 end)
 
 GTAOHouseHi2 = {
-    interiorId = 206081,
+    interiorId = GetInteriorAtCoords(340.9412, 437.1798, 149.3925),
 
     Strip = {
         A = "Apart_Hi_Strip_A",
@@ -20,7 +20,7 @@ GTAOHouseHi2 = {
         A = "Apart_Hi_Booze_A",
         B = "Apart_Hi_Booze_B",
         C = "Apart_Hi_Booze_C",
-        
+
         Enable = function(details, state, refresh)
             SetIplPropState(GTAOHouseHi2.interiorId, details, state, refresh)
         end

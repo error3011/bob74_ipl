@@ -7,7 +7,7 @@ end)
 
 ImportVehicleWarehouse = {
     Upper = {
-        interiorId = 252673,
+        interiorId = GetInteriorAtCoords(994.5925, -3002.594, -39.64699),
 
         Ipl = {
             Interior = {
@@ -49,7 +49,7 @@ ImportVehicleWarehouse = {
         }
     },
     Lower = {
-        interiorId = 253185,
+        interiorId = GetInteriorAtCoords(969.5376, -3000.411, -48.64689),
 
         Ipl = {
             Interior = {

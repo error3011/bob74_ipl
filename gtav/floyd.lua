@@ -3,7 +3,7 @@ exports('GetFloydObject', function()
 end)
 
 Floyd = {
-    interiorId = 171777,
+    interiorId = GetInteriorAtCoords(-1150.703, -1520.713, 10.633),
 
     Style = {
         normal = {

@@ -4,7 +4,7 @@ exports('GetMercenariesLabObject', function()
 end)
 
 MercenariesLab = {
-    interiorId = 292097,
+    interiorId = GetInteriorAtCoords(-1916.119, 3749.719, -100.000),
 
     Details = {
         levers = "entity_set_levers",

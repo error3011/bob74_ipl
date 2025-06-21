@@ -4,7 +4,7 @@ exports("GetAgentsFactory", function()
 end)
 
 AgentsFactory = {
-    interiorId = 297729,
+    interiorId = GetInteriorAtCoords(752.31, -997.24, -47.0),
 
     Ipl = {
         Exterior = {

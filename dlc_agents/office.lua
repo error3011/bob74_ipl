@@ -4,7 +4,7 @@ exports("GetAgentsOffice", function()
 end)
 
 AgentsOffice = {
-    interiorId = 297985,
+    interiorId = GetInteriorAtCoords(2149.71, 4787.76, -47.0),
 
     Style = {
         bed = "set_bed",
@@ -40,7 +40,6 @@ AgentsOffice = {
         AgentsOffice.Style.Set(AgentsOffice.Style.bed, false)
 
         AgentsOffice.Details.Enable(AgentsOffice.Details.laptop, true, false)
-        AgentsOffice.Details.Enable(AgentsOffice.Details.booze, true, false)
 
         RefreshInterior(AgentsOffice.interiorId)
     end

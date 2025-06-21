@@ -5,7 +5,7 @@ end)
 -- Penthouse: 976.636 70.295 115.164
 
 DiamondPenthouse = {
-    interiorId = 274689,
+    interiorId = GetInteriorAtCoords(976.636, 70.295, 115.164),
 
     Ipl = {
         Interior = {

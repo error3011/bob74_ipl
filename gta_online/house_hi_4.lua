@@ -5,7 +5,7 @@ exports('GetGTAOHouseHi4Object', function()
 end)
 
 GTAOHouseHi4 = {
-    interiorId = 208129,
+    interiorId = GetInteriorAtCoords(-676.127, 588.612, 145.1698),
 
     Strip = {
         A = "Apart_Hi_Strip_A",
@@ -34,7 +34,7 @@ GTAOHouseHi4 = {
             SetIplPropState(GTAOHouseHi4.interiorId, details, state, refresh)
         end
     },
-    
+
     LoadDefault = function()
         GTAOHouseHi4.Strip.Enable({
             GTAOHouseHi4.Strip.A,

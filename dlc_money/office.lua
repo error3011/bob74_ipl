@@ -4,7 +4,7 @@ exports("GetMoneyOffice", function()
 end)
 
 MoneyOffice = {
-    interiorId = 298753,
+    interiorId = GetInteriorAtCoords(-1160.493, -1538.932, -50.0),
 
     Ipl = {
         Exterior = {

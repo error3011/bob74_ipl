@@ -4,7 +4,7 @@ exports('GetBikerWeedFarmObject', function()
 end)
 
 BikerWeedFarm = {
-    interiorId = 247297,
+    interiorId = GetInteriorAtCoords(1051.491, -3196.536, -39.14842),
 
     Ipl = {
         Interior = {
@@ -511,9 +511,9 @@ BikerWeedFarm = {
     },
     Details = {
         production = "weed_production", -- Weed on the tables
-        fans = "weed_set_up", -- Fans + mold buckets
-        drying = "weed_drying", -- Drying weed hooked to the ceiling
-        chairs = "weed_chairs", -- Chairs at the tables
+        fans = "weed_set_up",           -- Fans + mold buckets
+        drying = "weed_drying",         -- Drying weed hooked to the ceiling
+        chairs = "weed_chairs",         -- Chairs at the tables
 
         Enable = function(details, state, refresh)
             SetIplPropState(BikerWeedFarm.interiorId, details, state, refresh)

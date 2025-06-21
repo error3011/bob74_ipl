@@ -4,7 +4,7 @@ exports('GetCayoPericoNightclub', function()
 end)
 
 CayoPericoNightclub = {
-    interiorId = 281089,
+    interiorId = GetInteriorAtCoords(1550.0, 250.0, -50.0),
 
     Ipl = {
         Posters = {

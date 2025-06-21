@@ -4,21 +4,28 @@ exports('GetGTAOHouseLow1Object', function()
 end)
 
 GTAOHouseLow1 = {
-    interiorId = 149761,
+    interiorId = GetInteriorAtCoords(261.4586, -998.8196, -99.00863),
     Strip = {
-        A = "Studio_Lo_Strip_A", B = "Studio_Lo_Strip_B", C = "Studio_Lo_Strip_C",
+        A = "Studio_Lo_Strip_A",
+        B = "Studio_Lo_Strip_B",
+        C = "Studio_Lo_Strip_C",
         Enable = function(details, state, refresh)
             SetIplPropState(GTAOHouseLow1.interiorId, details, state, refresh)
         end
     },
     Booze = {
-        A = "Studio_Lo_Booze_A", B = "Studio_Lo_Booze_B", C = "Studio_Lo_Booze_C",
+        A = "Studio_Lo_Booze_A",
+        B = "Studio_Lo_Booze_B",
+        C = "Studio_Lo_Booze_C",
         Enable = function(details, state, refresh)
             SetIplPropState(GTAOHouseLow1.interiorId, details, state, refresh)
         end
     },
     Smoke = {
-        none = "", stage1 = "Studio_Lo_Smoke_A", stage2 = "Studio_Lo_Smoke_B", stage3 = "Studio_Lo_Smoke_C",
+        none = "",
+        stage1 = "Studio_Lo_Smoke_A",
+        stage2 = "Studio_Lo_Smoke_B",
+        stage3 = "Studio_Lo_Smoke_C",
         Set = function(smoke, refresh)
             GTAOHouseLow1.Smoke.Clear(false)
             if smoke ~= nil then

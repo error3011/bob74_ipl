@@ -4,7 +4,7 @@ exports('GetSummerOfficeObject', function()
 end)
 
 SummerOffice = {
-    interiorId = 295425,
+    interiorId = GetInteriorAtCoords(565.886, -2688.761, -50.0),
 
     Ipl = {
         Exterior = {
@@ -99,15 +99,15 @@ SummerOffice = {
     LoadDefault = function()
         SummerOffice.Ipl.Exterior.Load()
 
-        SummerOffice.Style.Set(SummerOffice.Style.teak, false)
-        SummerOffice.Desk.Set(SummerOffice.Desk.files, false)
-        SummerOffice.Gunsafe.Set(SummerOffice.Gunsafe.cabinet, false)
+        SummerOffice.Style.Set(SummerOffice.Style.teak, true)
+        SummerOffice.Desk.Set(SummerOffice.Desk.files, true)
+        SummerOffice.Gunsafe.Set(SummerOffice.Gunsafe.cabinet, true)
 
-        SummerOffice.Trophy.Enable(SummerOffice.Trophy.plaque, true, false)
-        SummerOffice.Trophy.Enable(SummerOffice.Trophy.badge, true, false)
-        SummerOffice.Trophy.Enable(SummerOffice.Trophy.handcuffs, true, false)
+        SummerOffice.Trophy.Enable(SummerOffice.Trophy.plaque, true, true)
+        SummerOffice.Trophy.Enable(SummerOffice.Trophy.badge, true, true)
+        SummerOffice.Trophy.Enable(SummerOffice.Trophy.handcuffs, true, true)
 
-        SummerOffice.Plant.Enable(true, false)
+        SummerOffice.Plant.Enable(true, true)
 
         RefreshInterior(SummerOffice.interiorId)
     end

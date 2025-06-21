@@ -3,8 +3,8 @@ exports('GetMichaelObject', function()
 end)
 
 Michael = {
-    interiorId = 166657,
-    garageId = 166401,
+    interiorId = GetInteriorAtCoords(-811.1865, 179.4502, 72.1531),
+    garageId = GetInteriorAtCoords(-810.4656, 188.8490, 72.4785),
 
     Style = {
         normal = {
@@ -59,11 +59,11 @@ Michael = {
         end
     },
     Details = {
-        moviePoster = "Michael_premier", -- Meltdown movie poster
+        moviePoster = "Michael_premier",        -- Meltdown movie poster
         fameShamePoste = "V_Michael_FameShame", -- Next to Tracey's bed
         planeTicket = "V_Michael_plane_ticket", -- Plane ticket
-        spyGlasses = "V_Michael_JewelHeist", -- On the shelf inside Michael's bedroom
-        bugershot = "burgershot_yoga", -- Bag and cup in the kitchen, next to the sink
+        spyGlasses = "V_Michael_JewelHeist",    -- On the shelf inside Michael's bedroom
+        bugershot = "burgershot_yoga",          -- Bag and cup in the kitchen, next to the sink
 
         Enable = function(details, state, refresh)
             SetIplPropState(Michael.interiorId, details, state, refresh)
@@ -71,14 +71,14 @@ Michael = {
     },
 
     LoadDefault = function()
-        Michael.Garage.Enable(Michael.Garage.scuba, false, true)
+        Michael.Garage.Enable(Michael.Garage.scuba, true, true)
         Michael.Style.Set(Michael.Style.normal)
         Michael.Bed.Set(Michael.Bed.tidy)
-        Michael.Details.Enable(Michael.Details.moviePoster, false)
-        Michael.Details.Enable(Michael.Details.fameShamePoste, false)
-        Michael.Details.Enable(Michael.Details.spyGlasses, false)
-        Michael.Details.Enable(Michael.Details.planeTicket, false)
-        Michael.Details.Enable(Michael.Details.bugershot, false)
+        Michael.Details.Enable(Michael.Details.moviePoster, true)
+        Michael.Details.Enable(Michael.Details.fameShamePoste, true)
+        Michael.Details.Enable(Michael.Details.spyGlasses, true)
+        Michael.Details.Enable(Michael.Details.planeTicket, true)
+        Michael.Details.Enable(Michael.Details.bugershot, true)
 
         RefreshInterior(Michael.interiorId)
     end

@@ -4,7 +4,7 @@ exports('GetDrugWarsGarageObject', function()
 end)
 
 DrugWarsGarage = {
-    interiorId = 290561,
+    interiorId = GetInteriorAtCoords(-277.1116, 281.5493, 98.6691),
 
     Ipl = {
         Exterior = {

@@ -4,7 +4,7 @@ exports('GetBikerCocaineObject', function()
 end)
 
 BikerCocaine = {
-    interiorId = 247553,
+    interiorId = GetInteriorAtCoords(1093.6, -3196.6, -38.99841),
 
     Ipl = {
         Interior = {
@@ -77,9 +77,9 @@ BikerCocaine = {
         end
     },
     Details = {
-        cokeBasic1 = "coke_cut_01", -- On the basic tables
-        cokeBasic2 = "coke_cut_02", -- On the basic tables
-        cokeBasic3 = "coke_cut_03", -- On the basic tables
+        cokeBasic1 = "coke_cut_01",   -- On the basic tables
+        cokeBasic2 = "coke_cut_02",   -- On the basic tables
+        cokeBasic3 = "coke_cut_03",   -- On the basic tables
         cokeUpgrade1 = "coke_cut_04", -- On the upgraded tables
         cokeUpgrade2 = "coke_cut_05", -- On the upgraded tables
 

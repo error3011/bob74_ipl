@@ -3,7 +3,7 @@ exports('GetCriminalEnterpriseSmeonFixObject', function()
 end)
 
 CriminalEnterpriseSmeonFix = {
-    InteriorId = 7170,
+    InteriorId = GetInteriorAtCoords(-50.2248, -1098.8325, 26.049742),
 
     Ipl = {
         Interior = {
@@ -34,8 +34,6 @@ CriminalEnterpriseSmeonFix = {
             for entity, state in pairs(CriminalEnterpriseSmeonFix.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(CriminalEnterpriseSmeonFix.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(CriminalEnterpriseSmeonFix.InteriorId, entity)
                 end
             end
         end,

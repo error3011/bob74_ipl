@@ -3,14 +3,14 @@ exports('GetLesterFactoryObject', function()
 end)
 
 LesterFactory = {
-    interiorId = 92674,
+    interiorId = GetInteriorAtCoords(713.3110, -963.9747, 30.3953),
 
     Details = {
-        bluePrint = "V_53_Agency_Blueprint", -- Blueprint on the office desk
-        bag = "V_35_KitBag", -- Bag under the office desk
-        fireMan = "V_35_Fireman", -- Firemans helmets in the office
-        armour = "V_35_Body_Armour", -- Body armor in storage
-        gasMask = "Jewel_Gasmasks", -- Gas mask and suit in storage
+        bluePrint = "V_53_Agency_Blueprint",    -- Blueprint on the office desk
+        bag = "V_35_KitBag",                    -- Bag under the office desk
+        fireMan = "V_35_Fireman",               -- Firemans helmets in the office
+        armour = "V_35_Body_Armour",            -- Body armor in storage
+        gasMask = "Jewel_Gasmasks",             -- Gas mask and suit in storage
         janitorStuff = "v_53_agency _overalls", -- Janitor stuff in the storage (yes, there is a whitespace)
 
         Enable = function(details, state, refresh)

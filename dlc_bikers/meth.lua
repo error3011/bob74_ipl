@@ -4,7 +4,7 @@ exports('GetBikerMethLabObject', function()
 end)
 
 BikerMethLab = {
-    interiorId = 247041,
+    interiorId = GetInteriorAtCoords(1009.5, -3196.6, -38.99682),
 
     Ipl = {
         Interior = {

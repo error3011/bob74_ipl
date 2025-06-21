@@ -3,7 +3,7 @@ exports('GetCriminalEnterpriseWarehouseObject', function()
 end)
 
 CriminalEnterpriseWarehouse = {
-    InteriorId = 289793,
+    InteriorId = GetInteriorAtCoords(849.1047, -3000.209, -45.974354),
 
     Ipl = {
         Interior = {
@@ -39,8 +39,6 @@ CriminalEnterpriseWarehouse = {
             for entity, state in pairs(CriminalEnterpriseWarehouse.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(CriminalEnterpriseWarehouse.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(CriminalEnterpriseWarehouse.InteriorId, entity)
                 end
             end
         end,

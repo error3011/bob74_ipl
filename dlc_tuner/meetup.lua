@@ -4,7 +4,7 @@ exports('GetTunerMeetupObject', function()
 end)
 
 TunerMeetup = {
-    InteriorId = 285697,
+    InteriorId = GetInteriorAtCoords(-2000.0, 1113.211, -25.36243),
 
     Ipl = {
         Exterior = {
@@ -44,8 +44,6 @@ TunerMeetup = {
             for entity, state in pairs(TunerMeetup.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(TunerMeetup.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(TunerMeetup.InteriorId, entity)
                 end
             end
         end,

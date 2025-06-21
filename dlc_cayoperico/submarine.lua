@@ -4,7 +4,7 @@ exports('GetCayoPericoSubmarine', function()
 end)
 
 CayoPericoSubmarine = {
-    interiorId = 281345,
+    interiorId = GetInteriorAtCoords(1560.0, 400.0, -50.0),
 
     Workshop = {
         brig = "entity_set_brig",

@@ -13,47 +13,47 @@ FinanceOffice3 = {
     Style = {
         Theme = {
             warm = {
-                interiorId = 240897,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_01a",
                 safe = "ex_prop_safedoor_office1a"
             },
             classical = {
-                interiorId = 241153,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_01b",
                 safe = "ex_prop_safedoor_office1b"
             },
             vintage = {
-                interiorId = 241409,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_01c",
                 safe = "ex_prop_safedoor_office1c"
             },
             contrast = {
-                interiorId = 241665,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_02a",
                 safe = "ex_prop_safedoor_office2a"
             },
             rich = {
-                interiorId = 241921,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_02b",
                 safe = "ex_prop_safedoor_office2a"
             },
             cool = {
-                interiorId = 242177,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_02c",
                 safe = "ex_prop_safedoor_office2a"
             },
             ice = {
-                interiorId = 242433,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_03a",
                 safe = "ex_prop_safedoor_office3a"
             },
             conservative = {
-                interiorId = 242689,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_03b",
                 safe = "ex_prop_safedoor_office3a"
             },
             polished = {
-                interiorId = 242945,
+                interiorId = GetInteriorAtCoords(-1554.08, -573.7122, 108.5272),
                 ipl = "ex_sm_13_office_03c",
                 safe = "ex_prop_safedoor_office3c"
             }
@@ -103,7 +103,7 @@ FinanceOffice3 = {
         end
     },
     Safe = {
-        doorHeadingL = 126.0, -- Only need the heading of the Left door to get the Right ones
+        doorHeadingL = 126.0,                              -- Only need the heading of the Left door to get the Right ones
         Position = vector3(-1554.08, -573.7122, 108.5272), -- Approximately between the two doors
         -- These values are checked from "doorHandler.lua" and
         isLeftDoorOpen = false,

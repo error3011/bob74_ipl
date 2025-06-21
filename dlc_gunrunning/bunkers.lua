@@ -3,8 +3,7 @@ exports('GetGunrunningBunkerObject', function()
 end)
 
 GunrunningBunker = {
-    interiorId = 258561,
-
+    interiorId = GetInteriorAtCoords(899.5518, -3246.038, -98.04907),
     Ipl = {
         Interior = {
             ipl = "gr_grdlc_interior_placement_interior_1_grdlc_int_02_milo_",
@@ -20,17 +19,17 @@ GunrunningBunker = {
         },
         Exterior = {
             ipl = {
-                "gr_case0_bunkerclosed", -- Desert: 848.6175, 2996.567, 45.81612
-                "gr_case1_bunkerclosed",-- SmokeTree: 2126.785, 3335.04, 48.21422
-                "gr_case2_bunkerclosed", -- Scrapyard: 2493.654, 3140.399, 51.28789
-                "gr_case3_bunkerclosed", -- Oilfields: 481.0465, 2995.135, 43.96672
-                "gr_case4_bunkerclosed", -- RatonCanyon: -391.3216, 4363.728, 58.65862
-                "gr_case5_bunkerclosed", -- Grapeseed: 1823.961, 4708.14, 42.4991
-                "gr_case6_bunkerclosed", -- Farmhouse: 1570.372, 2254.549, 78.89397
-                "gr_case7_bunkerclosed", -- Paletto: -783.0755, 5934.686, 24.31475
-                "gr_case9_bunkerclosed", -- Route68: 24.43542, 2959.705, 58.35517
+                "gr_case0_bunkerclosed",  -- Desert: 848.6175, 2996.567, 45.81612
+                "gr_case1_bunkerclosed",  -- SmokeTree: 2126.785, 3335.04, 48.21422
+                "gr_case2_bunkerclosed",  -- Scrapyard: 2493.654, 3140.399, 51.28789
+                "gr_case3_bunkerclosed",  -- Oilfields: 481.0465, 2995.135, 43.96672
+                "gr_case4_bunkerclosed",  -- RatonCanyon: -391.3216, 4363.728, 58.65862
+                "gr_case5_bunkerclosed",  -- Grapeseed: 1823.961, 4708.14, 42.4991
+                "gr_case6_bunkerclosed",  -- Farmhouse: 1570.372, 2254.549, 78.89397
+                "gr_case7_bunkerclosed",  -- Paletto: -783.0755, 5934.686, 24.31475
+                "gr_case9_bunkerclosed",  -- Route68: 24.43542, 2959.705, 58.35517
                 "gr_case10_bunkerclosed", -- Zancudo: -3058.714, 3329.19, 12.5844
-                "gr_case11_bunkerclosed" -- Great Ocean Highway: -3180.466, 1374.192, 19.9597
+                "gr_case11_bunkerclosed"  -- Great Ocean Highway: -3180.466, 1374.192, 19.9597
             },
 
             -- Load exteriors IPLs.
@@ -116,13 +115,13 @@ GunrunningBunker = {
         end
     },
     Details = {
-        office = "Office_Upgrade_set", -- Office interior
-        officeLocked = "Office_blocker_set", -- Metal door blocking access to the office
-        locker = "gun_locker_upgrade", -- Locker next to the office door
-        rangeLights = "gun_range_lights", -- Lights next to the shooting range
-        rangeWall = "gun_wall_blocker", -- Wall blocking access to the shooting range
+        office = "Office_Upgrade_set",         -- Office interior
+        officeLocked = "Office_blocker_set",   -- Metal door blocking access to the office
+        locker = "gun_locker_upgrade",         -- Locker next to the office door
+        rangeLights = "gun_range_lights",      -- Lights next to the shooting range
+        rangeWall = "gun_wall_blocker",        -- Wall blocking access to the shooting range
         rangeLocked = "gun_range_blocker_set", -- Metal door blocking access to the shooting range
-        schematics = "Gun_schematic_set", -- Gun schematic on the table and whiteboard
+        schematics = "Gun_schematic_set",      -- Gun schematic on the table and whiteboard
 
         -- Enable or disable a detail.
         --     details: Prop to enable or disable (values: GunrunningBunker.Details.office / GunrunningBunker.Details.officeLocked / GunrunningBunker.Details.locker...)

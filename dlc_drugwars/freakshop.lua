@@ -4,7 +4,7 @@ exports('GetDrugWarsFreakshopObject', function()
 end)
 
 DrugWarsFreakshop = {
-    interiorId = 290817,
+    interiorId = GetInteriorAtCoords(570.9713, -420.0727, -70.000),
 
     Ipl = {
         Exterior = {

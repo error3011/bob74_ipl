@@ -5,7 +5,7 @@ exports('GetGTAOHouseHi5Object', function()
 end)
 
 GTAOHouseHi5 = {
-    interiorId = 207617,
+    interiorId = GetInteriorAtCoords(-763.107, 615.906, 144.1401),
 
     Strip = {
         A = "Apart_Hi_Strip_A",

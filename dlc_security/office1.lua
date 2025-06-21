@@ -3,7 +3,7 @@ exports('GetMpSecurityOffice1Object', function()
 end)
 
 MpSecurityOffice1 = {
-    InteriorId = 287489,
+    InteriorId = GetInteriorAtCoords(-1021.86084, -427.74564, 68.95764),
 
     Ipl = {
         Interior = {
@@ -85,8 +85,6 @@ MpSecurityOffice1 = {
             for entity, state in pairs(MpSecurityOffice1.Entities) do
                 if type(entity) == 'string' and state then
                     ActivateInteriorEntitySet(MpSecurityOffice1.InteriorId, entity)
-                elseif type(entity) == 'string' and not state then
-                    DeactivateInteriorEntitySet(MpSecurityOffice1.InteriorId, entity)
                 end
             end
         end,

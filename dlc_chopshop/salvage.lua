@@ -4,7 +4,7 @@ exports('GetChopShopSalvageObject', function()
 end)
 
 ChopShopSalvage = {
-    interiorId = 293377,
+    interiorId = GetInteriorAtCoords(1077.276, -2274.876, -50.000),
 
     Ipl = {
         Exterior = {

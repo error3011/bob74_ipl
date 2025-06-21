@@ -3,7 +3,7 @@ exports('GetStripClubObject', function()
 end)
 
 StripClub = {
-    interiorId = 197121,
+    interiorId = GetInteriorAtCoords(105.4093, -1295.8901, 29.2100),
 
     Mess = {
         mess = "V_19_Trevor_Mess", -- A bit of mess in the office

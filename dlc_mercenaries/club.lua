@@ -4,7 +4,7 @@ exports('GetMercenariesClubObject', function()
 end)
 
 MercenariesClub = {
-    interiorId = 291841,
+    interiorId = GetInteriorAtCoords(1202.407, -3251.251, -50.000),
 
     Style = {
         empty = "entity_set_no_plus", -- The lamps if the podium is not there
