@@ -9,8 +9,8 @@ ChopShopCounterfeit3 = {
     Tint = {
         tint = "Set_Tints",
 
-        Set = function(refresh)
-            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.Tint.tint, true, refresh)
+        Set = function(enable, refresh)
+            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.Tint.tint, enable, refresh)
         end,
 
         Clear = function(refresh)
@@ -21,8 +21,8 @@ ChopShopCounterfeit3 = {
     RightDoor = {
         door = "Set_Door_Right",
 
-        Set = function(refresh)
-            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.RightDoor.door, true, refresh)
+        Set = function(enable, refresh)
+            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.RightDoor.door, enable, refresh)
         end,
 
         Clear = function(refresh)
@@ -33,8 +33,8 @@ ChopShopCounterfeit3 = {
     LeftDoor = {
         door = "Set_Door_Left",
 
-        Set = function(refresh)
-            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.LeftDoor.door, true, refresh)
+        Set = function(enable, refresh)
+            SetIplPropState(ChopShopCounterfeit3.interiorId, ChopShopCounterfeit3.LeftDoor.door, enable, refresh)
         end,
 
         Clear = function(refresh)
@@ -43,9 +43,9 @@ ChopShopCounterfeit3 = {
     },
 
     LoadDefault = function()
-        ChopShopCounterfeit3.Tint.Set(false)
-        ChopShopCounterfeit3.RightDoor.Set(false)
-        ChopShopCounterfeit3.LeftDoor.Set(false)
+        ChopShopCounterfeit3.Tint.Set(false, true)
+        ChopShopCounterfeit3.RightDoor.Set(false, true)
+        ChopShopCounterfeit3.LeftDoor.Set(false, true)
         RefreshInterior(ChopShopCounterfeit3.interiorId)
     end
 
