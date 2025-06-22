@@ -121,7 +121,6 @@ ExecApartment1 = {
 
     LoadDefault = function()
         ExecApartment1.Style.Set(ExecApartment1.Style.Theme.modern, true)
-        print("Loaded " .. ExecApartment1.Style.Theme.modern.ipl .. " for Executive Apartment 1 " .. ExecApartment1.currentInteriorId)
         ExecApartment1.Strip.Enable({
             ExecApartment1.Strip.A,
             ExecApartment1.Strip.B,

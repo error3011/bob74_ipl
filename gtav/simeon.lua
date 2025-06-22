@@ -3,7 +3,7 @@ exports('GetSimeonObject', function()
 end)
 
 Simeon = {
-    interiorId = GetInteriorAtCoords(-47.16170 -1115.3327 26.5),
+    interiorId = GetInteriorAtCoords(-47.16170, -1115.3327, 26.5),
 
     Ipl = {
         Interior = {
